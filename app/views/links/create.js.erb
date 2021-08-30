@@ -1,0 +1,6 @@
+var element = document.getElementById('short-link');
+
+var html = "<%= j render 'link', link: @link.shortened_url %>";
+
+element.innerHTML = html;
+

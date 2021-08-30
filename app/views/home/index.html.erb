@@ -1,8 +1,16 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="container">
+  <div class="p-5">
+    <div class="card">
+      <div class="card-body">
+        <%= form_with model: @link, local: false do |form| %>
+          <h4 class="card-title">Enter a URL to shorten</h4>
+          <%= form.text_field :original_url, class: "form-control", placeholder: "Enter a URL..." %>
+          <%= form.submit "Shorten", class: "btn btn-primary mt-2" %>
+        <% end %>
+      </div>
+      <div id="short-link">
 
-<%= form_for @link, remote: true do |form| %>
-    <%= form.text_field :original_url %>
-    <%= form.submit %>
-<% end %>
-
+      </div>
+    </div>
+  </div>
+</div>
