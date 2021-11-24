@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  border-radius: 6px;
+  font-size: inherit;
+  color: #fff;
+  transition: 100ms linear;
+  padding: 10px 30px;
+}
+
+.btn:hover {
+  opacity: .9;
+}
+
+.btn-primary {
+  background-color: $primary-blue;
+}
+
+.btn-outline {
+  border: 1px solid $primary-blue;
+}
+
+.btn-white {
+  background-color: white;
+  border-color: white;
+}
+
+.btn-lg {
+  font-size: 20px;
+  line-height: 1.11;
+  padding: 18px 30px;
+}
