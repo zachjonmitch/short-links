@@ -6,10 +6,13 @@
   transition: 100ms linear;
   padding: 10px 30px;
   margin-top: 1.5rem;
-}
 
-.btn:hover {
-  opacity: .9;
+  &:hover, 
+  &:visited, 
+  &:focus {
+    background-color: var(--color-btn-hover);
+    color: white;
+  }
 }
 
 .btn-primary {

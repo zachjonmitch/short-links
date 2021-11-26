@@ -10,12 +10,24 @@ html, body {
 }
 
 .container {
-  max-width: 1150px;
+  max-width: 1100px;
   margin: 0 auto;
   overflow: auto;
-  padding: 0 20px;
+  padding: 0 var(--space-sm);
 }
 
 small {
   display: block;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover, 
+  &:visited, 
+  &:focus {
+    color: var(--color-link-hover);
+  }
 }
