@@ -5,6 +5,7 @@
   color: #fff;
   transition: 100ms linear;
   padding: 10px 30px;
+  margin-top: 1.5rem;
 }
 
 .btn:hover {
@@ -12,11 +13,11 @@
 }
 
 .btn-primary {
-  background-color: $primary-blue;
+  background-color: var(--color-blue);
 }
 
 .btn-outline {
-  border: 1px solid $primary-blue;
+  border: 1px solid var(--color-blue);
 }
 
 .btn-white {
@@ -25,7 +26,10 @@
 }
 
 .btn-lg {
-  font-size: 20px;
   line-height: 1.11;
   padding: 18px 30px;
+}
+
+.btn-wrap {
+  display: inline-block;
 }

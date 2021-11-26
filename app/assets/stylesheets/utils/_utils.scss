@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 20px;
 }
 
 @for $i from 1 through 12 {
@@ -22,4 +22,133 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-0 {
+  margin-bottom: 0;
+}
+.mt-1 {
+  margin-bottom: var(--space-xxxs);
+}
+.mt-2 {
+  margin-bottom: var(--space-xxs);
+}
+.mt-3 {
+  margin-bottom: var(--space-xs);
+}
+.mt-4 {
+  margin-bottom: var(--space-sm);
+}
+.mt-5 {
+  margin-bottom: var(--space-md);
+}
+.mt-6 {
+  margin-bottom: var(--space-lg);
+}
+.mt-7 {
+  margin-bottom: var(--space-xl);
+}
+.mt-8 {
+  margin-bottom: var(--space-xxl);
+}
+.mt-9 {
+  margin-bottom: var(--space-xxxl);
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: var(--space-xxxs);
+}
+.mb-2 {
+  margin-bottom: var(--space-xxs);
+}
+.mb-3 {
+  margin-bottom: var(--space-xs);
+}
+.mb-4 {
+  margin-bottom: var(--space-sm);
+}
+.mb-5 {
+  margin-bottom: var(--space-md);
+}
+.mb-6 {
+  margin-bottom: var(--space-lg);
+}
+.mb-7 {
+  margin-bottom: var(--space-xl);
+}
+.mb-8 {
+  margin-bottom: var(--space-xxl);
+}
+.mb-9 {
+  margin-bottom: var(--space-xxxl);
+}
+
+.pt-0 {
+  margin-bottom: 0;
+}
+.pt-1 {
+  margin-bottom: var(--space-xxxs);
+}
+.pt-2 {
+  margin-bottom: var(--space-xxs);
+}
+.pt-3 {
+  margin-bottom: var(--space-xs);
+}
+.pt-4 {
+  margin-bottom: var(--space-sm);
+}
+.pt-5 {
+  margin-bottom: var(--space-md);
+}
+.pt-6 {
+  margin-bottom: var(--space-lg);
+}
+.pt-7 {
+  margin-bottom: var(--space-xl);
+}
+.pt-8 {
+  margin-bottom: var(--space-xxl);
+}
+.pt-9 {
+  margin-bottom: var(--space-xxxl);
+}
+
+.pb-0 {
+  margin-bottom: 0;
+}
+.pb-1 {
+  margin-bottom: var(--space-xxxs);
+}
+.pb-2 {
+  margin-bottom: var(--space-xxs);
+}
+.pb-3 {
+  margin-bottom: var(--space-xs);
+}
+.pb-4 {
+  margin-bottom: var(--space-sm);
+}
+.pb-5 {
+  margin-bottom: var(--space-md);
+}
+.pb-6 {
+  margin-bottom: var(--space-lg);
+}
+.pb-7 {
+  margin-bottom: var(--space-xl);
+}
+.pb-8 {
+  margin-bottom: var(--space-xxl);
+}
+.pb-9 {
+  margin-bottom: var(--space-xxxl);
 }
