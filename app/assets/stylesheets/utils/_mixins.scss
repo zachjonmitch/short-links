@@ -1,35 +1,35 @@
-@mixin media-sm {
-  @media (min-width: var(--bp-sm)) {
+@mixin min-sm {
+  @media (min-width: $bp-sm) {
       @content;
   }
 }
 
-@mixin media-md {
-  @media (min-width: var(--bp-md)) {
+@mixin min-md {
+  @media (min-width: $bp-md) {
       @content;
   }
 }
 
-@mixin media-lg {
-  @media (min-width: var(--bp-lg)) {
+@mixin min-lg {
+  @media (min-width: $bp-lg) {
       @content;
   }
 }
 
-@mixin media-xl {
-  @media (min-width: var(--bp-xl)) {
+@mixin min-xl {
+  @media (min-width: $bp-xl) {
       @content;
   }
 }
 
-@mixin media-xxl {
-  @media (min-width: var(--bp-xxl)) {
+@mixin min-xxl {
+  @media (min-width: $bp-xxl) {
       @content;
   }
 }
 
 // Custom Breakpoint
-@mixin media-custom($bp) {
+@mixin min-custom($bp) {
   @media (min-width: $bp+'px') {
       @content;
   }
