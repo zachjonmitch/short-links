@@ -1,5 +1,60 @@
-.hero {
+.main-hero {
   min-height: 650px;
   background-repeat: no-repeat;
   background-position: 56% 0;
+  display: flex;
+  align-items: center;
+}
+
+.main-hero .grid {
+  @include min-lg {
+    grid-template-columns: 60% 40%;
+  }
+}
+
+.main-hero .grid-item:nth-child(1) {
+  @include min-lg {
+    order: 2;
+  }
+}
+
+.main-hero .grid-item:nth-child(2) {
+  @include min-lg {
+    order: 1;
+  }
+}
+
+.main-hero .content {
+  z-index: 2;
+}
+
+.main-hero .btn-wrap {
+  @include min-lg {
+    display: inline-block;
+  }
+}
+
+.main-hero .btn {
+  width: 100%;
+}
+
+.main-hero small {
+  @include min-lg {
+    text-align: center;
+  }
+}
+
+.main-hero .image-box {
+  position: relative;
+  direction: rtl;
+}
+
+.main-hero img {
+  @include min-lg {
+    max-width: 170%;
+    margin-right: -100px;
+  }
+  @include min-custom(75rem) {
+    margin-right: -180px;
+  }
 }

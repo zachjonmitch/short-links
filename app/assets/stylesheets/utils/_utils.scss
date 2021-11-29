@@ -1,6 +1,7 @@
 .grid {
   display: grid;
   grid-gap: 20px;
+  align-items: center;
 }
 
 @for $i from 1 through 12 {
@@ -153,4 +154,10 @@
 }
 .pb-9 {
   padding-bottom: var(--space-xxxl);
+}
+
+ul.unstyled {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

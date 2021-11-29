@@ -3,9 +3,10 @@
   border-radius: 6px;
   font-size: inherit;
   color: #fff;
-  transition: 100ms linear;
+  transition: 150ms linear;
   padding: 10px 30px;
   margin-top: 1.5rem;
+  text-align: center;
 
   &:hover, 
   &:visited, 
@@ -31,8 +32,4 @@
 .btn-lg {
   line-height: 1.11;
   padding: 18px 30px;
-}
-
-.btn-wrap {
-  display: inline-block;
 }

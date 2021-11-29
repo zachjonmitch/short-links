@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -10,16 +11,29 @@ html, body {
 }
 
 .container {
-  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
-  overflow: auto;
   padding: 0 var(--space-sm);
+
+  @include min-md {
+    max-width: 45rem;
+  }
+  @include min-lg {
+    max-width: 73.125rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 a {
   color: var(--color-link);
   text-decoration: none;
   cursor: pointer;
+  transition: 150ms linear;
 
   &:hover, 
   &:visited, 

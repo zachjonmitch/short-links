@@ -30,7 +30,7 @@
 
 // Custom Breakpoint
 @mixin min-custom($bp) {
-  @media (min-width: $bp+'px') {
+  @media (min-width: $bp) {
       @content;
   }
 }

@@ -1,4 +1,6 @@
-<div class="container">
+<%
+=begin%>
+ <div class="container">
   <div class="p-5">
     <div class="card">
       <div class="card-body">
@@ -29,17 +31,28 @@
       </div>
     </div>
   </div>
-</section>
+</section> 
+<%
+=end%>
+
+<%= render "shared/header" %>
 
 <section class="main-hero">
   <div class="container grid">
-    <div class="content">
+    <div class="image-box grid-item">
+      <img src="https://docrdsfx76ssb.cloudfront.net/static/1637680286/pages/wp-content/uploads/2020/05/illo-mobile-810x480-1.jpg">
+    </div>
+    <div class="content grid-item">
       <h1>Short links, big results</h1>
         <p class="lead">A URL shortener built with powerful tools to help you grow and protect your brand.</p>
         <div class="btn-wrap">
           <a class="btn btn-primary btn-lg">Get Started for Free</a>
-          <small class="mt-2 text-center"><a href="#">Get a Quote</a></small>
+          <small class="mt-2"><a href="#">Get a Quote</a></small>
         </div>
     </div>
   </div>
 </section>
+
+<main role="main">
+
+</main>

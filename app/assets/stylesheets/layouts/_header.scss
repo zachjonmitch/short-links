@@ -1,0 +1,59 @@
+.main-header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-header .grid {
+  gap: 0;
+}
+
+.main-header li,
+.main-header a {
+  font-size: 1rem;
+}
+
+.main-header li a {
+  color: var(--color-text);
+  padding: .5rem;
+
+  &:hover {
+    color: var(--color-link);
+  }
+}
+
+.main-header .grid {
+  grid-template-columns: 1fr 1fr;
+
+  @include min-lg {
+    grid-template-columns: .5fr 2fr 1fr;
+  }
+}
+
+.main-header .logo img {
+  max-width: 6.25rem;
+  margin-top: .625rem;
+}
+
+.main-header .menu-list {
+  display: flex;
+  gap: 1.25rem;
+  display: none;
+}
+
+.main-header .mobile-menu-icon {
+  justify-self: end;
+
+  &:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://docrdsfx76ssb.cloudfront.net/static/1637680286/pages/wp-content/themes/JointsWP-CSS-master/assets/foundation-icons/svgs/feather-icon-menu.svg');
+  }
+  &.is-open:before {
+    background-image: url('https://docrdsfx76ssb.cloudfront.net/static/1637680286/pages/wp-content/themes/JointsWP-CSS-master/assets/foundation-icons/svgs/feather-icon-x.svg');
+  }
+}
