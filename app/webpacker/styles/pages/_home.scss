@@ -12,12 +12,6 @@
   }
 }
 
-.main-hero .grid-item:nth-child(1) {
-  @include min-lg {
-    order: 2;
-  }
-}
-
 .main-hero .grid-item:nth-child(2) {
   @include min-lg {
     order: 1;
@@ -47,6 +41,7 @@
 .main-hero .image-box {
   position: relative;
   direction: rtl;
+  order: 2;
 }
 
 .main-hero img {
