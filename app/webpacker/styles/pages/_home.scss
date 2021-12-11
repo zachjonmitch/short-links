@@ -1,4 +1,4 @@
-.main-hero {
+.hero {
   min-height: 650px;
   background-repeat: no-repeat;
   background-position: 56% 0;
@@ -6,45 +6,45 @@
   align-items: center;
 }
 
-.main-hero .grid {
+.hero .grid {
   @include min-lg {
     grid-template-columns: 60% 40%;
   }
 }
 
-.main-hero .grid-item:nth-child(2) {
+.hero .grid-item:nth-child(2) {
   @include min-lg {
     order: 1;
   }
 }
 
-.main-hero .content {
+.hero .content {
   z-index: 2;
 }
 
-.main-hero .btn-wrap {
+.hero .btn-wrap {
   @include min-lg {
     display: inline-block;
   }
 }
 
-.main-hero .btn {
+.hero .btn {
   width: 100%;
 }
 
-.main-hero small {
+.hero small {
   @include min-lg {
     text-align: center;
   }
 }
 
-.main-hero .image-box {
+.hero .image-box {
   position: relative;
   direction: rtl;
   order: 2;
 }
 
-.main-hero img {
+.hero img {
   @include min-lg {
     max-width: 170%;
     margin-right: -100px;
@@ -52,4 +52,8 @@
   @include min-custom(75rem) {
     margin-right: -180px;
   }
+}
+
+.shorten {
+  background-color: var(--color-dark-blue);
 }

@@ -92,20 +92,3 @@ small {
 b, strong {
   font-weight: bold;
 }
-
-/* Utility Classes */
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.lead {
-  font-size: var(--text-lg);
-  opacity: .9;
-}
-
-.text-center {
-  text-align: center;
-}
