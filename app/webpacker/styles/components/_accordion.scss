@@ -1,0 +1,71 @@
+.accordion {
+
+  &-btn {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-top: 1px solid #d8d8d8;
+    position: relative;
+    text-align: left;
+    padding: 25px 60px 25px 20px;
+    font-size: clamp(18px, 3.5vw, 21px);
+    font-weight: 800;
+    cursor: pointer;
+  
+    &::after {
+      content: "";
+      background-image: url('~images/fa-icons/solid/times.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-size: 2.5625rem;
+      transform: translateY(-50%) rotate(45deg);
+      width: 15px;
+      height: 15px;
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      opacity: .6;
+      transition: transform .3s ease-in-out;
+    }
+  
+    &:hover {
+      background-color: #e6e6e6;
+    }
+  }
+
+  &-collapse {
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+  }
+
+  &-content {
+    padding: 20px;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    @include min-lg {
+      padding: 30px;
+    }
+  }
+}
+
+.accordion-item.is-active {
+
+  .accordion-btn {
+    background-color: #e6e6e6;
+
+    &::after {
+      transform: translateY(-50%) rotate(0);
+    }
+  }
+}
+
+.accordion-item:first-child .accordion-btn {
+  border-top: none;
+}
+

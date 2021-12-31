@@ -4,7 +4,7 @@
   font-size: inherit;
   color: #fff;
   transition: 150ms linear;
-  padding: 10px 30px;
+  padding: 12px 30px;
   margin-top: 1.5rem;
   text-align: center;
   cursor: pointer;
@@ -27,6 +27,12 @@
   background-color: transparent;
   color: var(--color-blue);
   border-color: var(--color-blue);
+}
+
+.btn-secondary {
+  background-color: var(--color-blue-light);
+  color: var(--color-blue);
+  border-color: var(--color-blue-light);
 }
 
 .btn-white {

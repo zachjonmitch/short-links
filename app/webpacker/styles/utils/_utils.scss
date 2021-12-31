@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25rem;
   align-items: center;
 }
 
@@ -32,25 +32,14 @@ ul.unstyled {
 }
 
 .bg-dark-blue {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-blue-dark);
   color: white;
 }
 
-.text-white {
-  color: white;
+.d-block {
+  display: block;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.lead {
-  font-size: var(--text-lg);
-  opacity: .9;
-}
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.d-inline-block {
+  display: inline-block;
 }

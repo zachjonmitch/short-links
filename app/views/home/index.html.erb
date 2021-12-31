@@ -21,7 +21,7 @@
 
 <%= render "shared/header" %>
 
-<section class="hero py-7">
+<section class="home-hero">
   <div class="container grid">
     <div class="content">
       <h1>Short links, big results</h1>
@@ -39,30 +39,30 @@
 
 <main role="main">
 
-  <section class="shorten py-2 bg-dark-blue">
+  <section class="home-shorten">
     <div class="container">
       <div class="shorten-form">
         <%= form_with model: @link, local: false do |form| %>
-          <h4 class="title text-white">Enter a URL to shorten</h4>
           <%= form.text_field :original_url, class: "form-control", placeholder: "Enter a URL..." %>
           <%= form.submit "Shorten", class: "btn btn-primary mt-2" %>
         <% end %>
       </div>
+      <p class="disclaimer">By clicking SHORTEN, you are agreeing to Bitly’s Terms of Service and Privacy Policy</p>
       <div id="short-link" class="shorten-actions">
         <!-- Insert link actions -->
       </div>
     </div>
   </section>
 
-  <section class="features">
+  <section class="home-features my-8 mt-4">
     <div class="container">
       <div class="scroll-anchor">
-        <p>Scroll to learn more</p>
+        <p class="text-sm mb-1 text-center">Scroll to learn more</p>
         <img loading="lazy" src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2019/03/chevron.png" alt="" width="31" height="20">
       </div>
-      <div class="features-header">
-        <h3>The link shortener that has your brand’s back</h3>
-        <p>Your brand wasn’t built to be hidden. Help it stand out with branded links that drive more clicks.</p>
+      <div class="header">
+        <h4 class="header-title">The link shortener that has your brand’s back</h4>
+        <p class="header-text">Your brand wasn’t built to be hidden. Help it stand out with branded links that drive more clicks.</p>
       </div>
       <div class="grid">
         <div class="card">
@@ -94,98 +94,116 @@
         </div>
       </div>
       <div class="cta">
-        <a href="#">Get Started for Free</a>
-        <small><a href="#">Learn More</a></small>
+        <a class="cta-btn btn btn-secondary" href="#">Get Started for Free</a>
+        <a class="cta-link" href="#">Learn More</a>
       </div>
-      <hr>
+      <hr class="mt-8">
     </div>
   </section>
 
-  <section class="quotes">
+  <section class="home-quotes my-8">
     <div class="container">
-      <h3>What our customers are saying</h3>
+      <h4 class="title text-center">What our customers are saying</h4>
       <div class="slide">
-        <img class="stars-icon" alt="" loading="lazy" width="100" src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2021/11/stars-quote-widget.png">
-        <img class="quote-icon" alt="" loading="lazy" width="100" src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2021/11/Quote.svg">
-        <p>Bitly has enabled us to build trust with clients with branded short links that carry the main message of the link and that carries our brand.</p>
-        <p class="author">John Smith | Project Manager</p>
+        <div class="slide-icons">
+          <img class="slide-icon-stars" alt="" loading="lazy" width="110" src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2021/11/stars-quote-widget.png">
+          <img class="slide-icon-quote" alt="" loading="lazy" width="30" src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2021/11/Quote.svg">
+        </div>
+        <p class="quote-text">Bitly has enabled us to build trust with clients with branded short links that carry the main message of the link and that carries our brand.</p>
+        <p class="quote-author"><strong>John Smith</strong> | Project Manager</p>
       </div>
       <div class="slider-nav">
         <div class="left"></div>
         <div class="right"></div>
       </div>
-      <hr>
+      <hr class="mt-8">
     </div>
   </section>
 
-  <section class="brands">
+  <section class="home-brands my-8">
     <div class="container">
-      <h3>The most recognized brands in the world love Bitly</h3>
-      <div class="gallery grid">
+      <h4 class="title text-center">The most recognized brands in the world love Bitly</h4>
+      <div class="gallery">
         <img src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2019/03/recognizable-brands-espn.svg" width="150" loading="lazy" alt="">
-        <img src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2019/03/recognizable-brands-espn.svg" width="150" loading="lazy" alt="">
-        <img src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2019/03/recognizable-brands-espn.svg" width="150" loading="lazy" alt="">
-        <img src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2019/03/recognizable-brands-espn.svg" width="150" loading="lazy" alt="">
-        <img src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2019/03/recognizable-brands-espn.svg" width="150" loading="lazy" alt="">
-        <img src="https://docrdsfx76ssb.cloudfront.net/static/1638842711/pages/wp-content/uploads/2019/03/recognizable-brands-espn.svg" width="150" loading="lazy" alt="">
+        <img src="https://docrdsfx76ssb.cloudfront.net/static/1640018035/pages/wp-content/uploads/2019/03/recognizable-brands-disney.svg" width="150" loading="lazy" alt="">
+        <img src="https://docrdsfx76ssb.cloudfront.net/static/1640018035/pages/wp-content/uploads/2019/03/recognizable-brands-buzzfeed.svg" width="150" loading="lazy" alt="">
+        <img src="https://docrdsfx76ssb.cloudfront.net/static/1640018035/pages/wp-content/uploads/2019/03/recognizable-brands-nytimes.svg" width="150" loading="lazy" alt="">
+        <img src="https://docrdsfx76ssb.cloudfront.net/static/1640018035/pages/wp-content/uploads/2019/03/recognizable-brands-gartner.svg" width="150" loading="lazy" alt="">
+        <img src="https://docrdsfx76ssb.cloudfront.net/static/1640018035/pages/wp-content/uploads/2019/03/recognizable-brands-bose.svg" width="150" loading="lazy" alt="">
+      </div>
+      <hr class="mt-8">
+    </div>
+  </section>
+
+  <section class="home-faq my-8">
+    <div class="container">
+      <h4 class="title text-center mb-6">Frequently asked questions</h4>
+      <div class="accordion" role="tablist">
+        <div class="accordion-item">
+          <button class="accordion-btn" role="tab" aria-expanded="false">What is a URL Shortener?</button>
+          <div class="accordion-collapse" aria-hidden="true">
+            <div class="accordion-content">
+              <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
+              <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
+              <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
+              <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
+              <p>Make your URLs stand out with our easy to use free link shortener above.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" role="tab" aria-expanded="false">Benefits of a Short URL</button>
+          <div class="accordion-collapse" aria-hidden="true">
+            <div class="accordion-content">
+              <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
+              <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
+              <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
+              <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
+              <p>Make your URLs stand out with our easy to use free link shortener above.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" role="tab" aria-expanded="false">What is a Custom URL Shortener?</button>
+          <div class="accordion-collapse" aria-hidden="true">
+            <div class="accordion-content">
+              <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
+              <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
+              <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
+              <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
+              <p>Make your URLs stand out with our easy to use free link shortener above.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" role="tab" aria-expanded="false">Features of Bitly’s Link Management Platform</button>
+          <div class="accordion-collapse" aria-hidden="true">
+            <div class="accordion-content">
+              <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
+              <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
+              <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
+              <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
+              <p>Make your URLs stand out with our easy to use free link shortener above.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" role="tab" aria-expanded="false">Why Choose Bitly</button>
+          <div class="accordion-collapse" aria-hidden="true">
+            <div class="accordion-content">
+              <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
+              <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
+              <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
+              <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
+              <p>Make your URLs stand out with our easy to use free link shortener above.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="faq">
-    <div class="container">
-      <h3 class="faq-title">Frequently asked questions</h3>
-      <div class="accordion">
-        <div class="accordion-item">
-          <button class="accordion-btn">What is a URL Shortener?</button>
-          <div class="accordion-content">
-            <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
-            <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
-            <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
-            <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
-            <p>Make your URLs stand out with our easy to use free link shortener above.</p>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-btn">What is a URL Shortener?</button>
-          <div class="accordion-content">
-            <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
-            <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
-            <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
-            <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
-            <p>Make your URLs stand out with our easy to use free link shortener above.</p>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-btn">What is a URL Shortener?</button>
-          <div class="accordion-content">
-            <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
-            <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
-            <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
-            <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
-            <p>Make your URLs stand out with our easy to use free link shortener above.</p>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-btn">What is a URL Shortener?</button>
-          <div class="accordion-content">
-            <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
-            <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
-            <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
-            <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
-            <p>Make your URLs stand out with our easy to use free link shortener above.</p>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-btn">What is a URL Shortener?</button>
-          <div class="accordion-content">
-            <p>A URL shortener, also known as a link shortener, seems like a simple tool, but it is a service that can have a dramatic impact on your marketing efforts.</p>
-            <p>Link shorteners work by transforming any long URL into a shorter, more readable link. When a user clicks the shortened version, they’re automatically forwarded to the destination URL.</p>
-            <p>Think of a short URL as a more descriptive and memorable nickname for your long webpage address. You can, for example, use a short URL like bit.ly/CelebrateBitly so people will have a good idea about where your link will lead before they click it.</p>
-            <p>If you’re contributing content to the online world, you <em>need</em> a URL shortener.</p>
-            <p>Make your URLs stand out with our easy to use free link shortener above.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta bg-dark-blue">
+  <section class="home-cta bg-dark-blue">
     <div class="container">
       <h3 class="text-white">More than a free link shortener</h3>
       <a class="btn btn-primary" href="#">Get Started</a>
