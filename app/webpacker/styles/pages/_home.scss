@@ -69,6 +69,7 @@
 }
 
 .shorten-form {
+  
   form {
     @include min-lg {
       display: grid;
@@ -112,6 +113,7 @@
 }
 
 .home-features {
+
   .scroll-anchor {
     text-align: center;
     margin: 20px 0 50px 0;
@@ -171,6 +173,7 @@
 }
 
 .home-quotes {
+
   .title {
     text-align: center;
     margin-bottom: 40px;
@@ -205,6 +208,7 @@
 }
 
 .home-brands {
+
   .gallery {
     display: flex;
     justify-content: center;

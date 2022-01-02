@@ -1,5 +1,28 @@
 window.addEventListener('DOMContentLoaded', (event) => {
 
+  // Toggle mobile menu collapse
+  document.querySelector('.mobile-menu-btn').addEventListener('click', event => {
+    let mainNavGroup = document.querySelector('.main-nav-group');
+    let accountNavGroup = document.querySelector('.account-nav-group');
+
+    mainNavGroup.classList.toggle('is-active');
+    accountNavGroup.classList.toggle('is-active');
+  });
+
+  //Toggle dropdown menu
+  document.querySelectorAll('.menu-dropdown').forEach((item) => {
+    item.addEventListener('click', event => {
+      event.preventDefault();
+  
+      let menuItem = event.target.parentElement;
+      let submenu = menuItem.querySelector('.submenu-list');
+  
+      event.target.classList.toggle('is-active');
+      submenu.classList.toggle('is-active');
+    });
+  })
+
+  // Toggle accordion collapse
   document.querySelectorAll('.accordion-btn').forEach((item) => {
     item.addEventListener('click', event => {
       let accordionItem = event.target.parentElement;
